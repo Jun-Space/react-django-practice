@@ -1,8 +1,8 @@
-from account.models import Account
+from account.models import DummyUser
 from rest_framework import serializers
 
 
-class AccountSerializer(serializers.ModelSerializer):
+class DummyUserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Account
+        model = DummyUser
         fields = ['id', 'name']
